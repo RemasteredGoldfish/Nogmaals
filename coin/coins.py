@@ -11,7 +11,7 @@ paid = int(float(input('Paid amount: ')) * 100) #The amount you already paid (fl
 change = paid - toPay #The amount you already paid - the amount you have to pay = the change
 
 if change > 0: #If change is bigger then 0
-  coinValue = 50 #CoinValue is equal to 50
+  coinValue = 500 #CoinValue is equal to 500
   
   while change > 0 and coinValue > 0:
     nrCoins = change // coinValue #coinValue // (floor division and round it of to a whole number) change = nrCoins 
@@ -23,7 +23,7 @@ if change > 0: #If change is bigger then 0
 
 # comment on code below:
       coinValue = 500
-    elif coinValue == 500:
+    if coinValue == 500:
       coinValue = 300
     elif coinValue == 300:
       coinValue = 200
